@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="docBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238"/>
+      <stop offset="100%" stop-color="#0F1426"/>
+    </linearGradient>
+    <linearGradient id="cornerFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#217346"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M 14 8 L 38 8 L 50 20 L 50 56 C 50 58.2 48.2 60 46 60 L 14 60 C 11.8 60 10 58.2 10 56 L 10 12 C 10 9.8 11.8 8 14 8 Z" fill="url(#docBg)" stroke="#217346" stroke-opacity="0.6" stroke-width="1.5"/>
+  <path d="M 38 8 L 38 20 L 50 20 Z" fill="url(#cornerFold)"/>
+  <rect x="14" y="40" width="36" height="12" rx="3" fill="#217346" fill-opacity="0.85"/>
+  <text x="32" y="49" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#F8FAFC" text-anchor="middle">XLS</text>
+  <path d="M 22 20 L 42 36 M 42 20 L 22 36" stroke="#F8FAFC" stroke-width="3" stroke-linecap="round"/>
+</svg>

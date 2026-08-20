@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+  <rect id="hint-top-margin" x="0" y="0" width="80" height="6" fill="none"/>
+  <rect id="hint-bottom-margin" x="0" y="74" width="80" height="6" fill="none"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="80" fill="none"/>
+  <rect id="hint-right-margin" x="74" y="0" width="6" height="80" fill="none"/>
+
+  <g id="center"><rect x="6" y="6" width="68" height="68" fill="#0F1426" fill-opacity="0.96"/></g>
+  <g id="topleft">
+    <path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#0F1426" fill-opacity="0.96"/>
+    <path d="M 0 6 A 6 6 0 0 1 6 0" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="top">
+    <rect x="6" y="0" width="68" height="6" fill="#0F1426" fill-opacity="0.96"/>
+    <line x1="6" y1="0.5" x2="74" y2="0.5" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="topright">
+    <path d="M 74 0 A 6 6 0 0 1 80 6 L 74 6 Z" fill="#0F1426" fill-opacity="0.96"/>
+    <path d="M 74 0 A 6 6 0 0 1 80 6" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="left">
+    <rect x="0" y="6" width="6" height="68" fill="#0F1426" fill-opacity="0.96"/>
+    <line x1="0.5" y1="6" x2="0.5" y2="74" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="right">
+    <rect x="74" y="6" width="6" height="68" fill="#0F1426" fill-opacity="0.96"/>
+    <line x1="79.5" y1="6" x2="79.5" y2="74" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="bottomleft">
+    <path d="M 6 80 A 6 6 0 0 1 0 74 L 6 74 Z" fill="#0F1426" fill-opacity="0.96"/>
+    <path d="M 6 80 A 6 6 0 0 1 0 74" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="bottom">
+    <rect x="6" y="74" width="68" height="6" fill="#0F1426" fill-opacity="0.96"/>
+    <line x1="6" y1="79.5" x2="74" y2="79.5" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+  <g id="bottomright">
+    <path d="M 80 74 A 6 6 0 0 1 74 80 L 74 74 Z" fill="#0F1426" fill-opacity="0.96"/>
+    <path d="M 80 74 A 6 6 0 0 1 74 80" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+</svg>

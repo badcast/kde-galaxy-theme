@@ -1,0 +1,17 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "lmecomposer@gmail.com",
+                "Name": "badcast"
+            }
+        ],
+        "Category": "Window Decoration",
+        "Description": "Galaxy Theme KDE - Seamless Cosmic Quantum Pod & Astral Blade Window Decoration for KDE Plasma 6",
+        "Id": "Galaxy-Dark-Aurorae",
+        "License": "GPL-3.0+",
+        "Name": "Galaxy Theme KDE Aurorae",
+        "Version": "4.1.0",
+        "Website": "https://github.com/badcast/kde-galaxy-theme"
+    }
+}

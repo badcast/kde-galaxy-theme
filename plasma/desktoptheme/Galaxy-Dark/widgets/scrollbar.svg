@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="100" viewBox="0 0 60 100">
+  <rect id="background-vertical-center" x="25" y="10" width="10" height="80" fill="#0B0E17" opacity="0.6"/>
+  <rect id="slider-vertical-center" x="26" y="20" width="8" height="60" rx="4" fill="#00F0FF" opacity="0.8"/>
+  <rect id="slider-vertical-hover" x="25" y="20" width="10" height="60" rx="5" fill="#00F0FF"/>
+</svg>

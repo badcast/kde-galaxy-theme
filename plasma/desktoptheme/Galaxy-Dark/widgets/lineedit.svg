@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+  <rect id="hint-top-margin" x="0" y="0" width="60" height="6" fill="none"/>
+  <rect id="hint-bottom-margin" x="0" y="54" width="60" height="6" fill="none"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="60" fill="none"/>
+  <rect id="hint-right-margin" x="54" y="0" width="6" height="60" fill="none"/>
+
+  <g id="base-center"><rect x="6" y="6" width="48" height="48" fill="#0B0E17"/></g>
+  <g id="base-topleft"><path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#0B0E17"/><path d="M 0 6 A 6 6 0 0 1 6 0" stroke="#2A3558" stroke-width="1" fill="none"/></g>
+  <g id="base-top"><rect x="6" y="0" width="48" height="6" fill="#0B0E17"/><line x1="6" y1="0.5" x2="54" y2="0.5" stroke="#2A3558" stroke-width="1"/></g>
+  <g id="base-topright"><path d="M 54 0 A 6 6 0 0 1 60 6 L 54 6 Z" fill="#0B0E17"/><path d="M 54 0 A 6 6 0 0 1 60 6" stroke="#2A3558" stroke-width="1" fill="none"/></g>
+  <g id="base-left"><rect x="0" y="6" width="6" height="48" fill="#0B0E17"/><line x1="0.5" y1="6" x2="0.5" y2="54" stroke="#2A3558" stroke-width="1"/></g>
+  <g id="base-right"><rect x="54" y="6" width="6" height="48" fill="#0B0E17"/><line x1="59.5" y1="6" x2="59.5" y2="54" stroke="#2A3558" stroke-width="1"/></g>
+  <g id="base-bottomleft"><path d="M 6 60 A 6 6 0 0 1 0 54 L 6 54 Z" fill="#0B0E17"/><path d="M 6 60 A 6 6 0 0 1 0 54" stroke="#2A3558" stroke-width="1" fill="none"/></g>
+  <g id="base-bottom"><rect x="6" y="54" width="48" height="6" fill="#0B0E17"/><line x1="6" y1="59.5" x2="54" y2="59.5" stroke="#2A3558" stroke-width="1"/></g>
+  <g id="base-bottomright"><path d="M 60 54 A 6 6 0 0 1 54 60 L 54 54 Z" fill="#0B0E17"/><path d="M 60 54 A 6 6 0 0 1 54 60" stroke="#2A3558" stroke-width="1" fill="none"/></g>
+
+  <g id="focus-center"><rect x="6" y="6" width="48" height="48" fill="#0B0E17"/></g>
+  <g id="focus-topleft"><path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#0B0E17"/><path d="M 0 6 A 6 6 0 0 1 6 0" stroke="#00F0FF" stroke-width="1.2" fill="none"/></g>
+  <g id="focus-top"><rect x="6" y="0" width="48" height="6" fill="#0B0E17"/><line x1="6" y1="0.5" x2="54" y2="0.5" stroke="#00F0FF" stroke-width="1.2"/></g>
+  <g id="focus-topright"><path d="M 54 0 A 6 6 0 0 1 60 6 L 54 6 Z" fill="#0B0E17"/><path d="M 54 0 A 6 6 0 0 1 60 6" stroke="#00F0FF" stroke-width="1.2" fill="none"/></g>
+  <g id="focus-left"><rect x="0" y="6" width="6" height="48" fill="#0B0E17"/><line x1="0.5" y1="6" x2="0.5" y2="54" stroke="#00F0FF" stroke-width="1.2"/></g>
+  <g id="focus-right"><rect x="54" y="6" width="6" height="48" fill="#0B0E17"/><line x1="59.5" y1="6" x2="59.5" y2="54" stroke="#00F0FF" stroke-width="1.2"/></g>
+  <g id="focus-bottomleft"><path d="M 6 60 A 6 6 0 0 1 0 54 L 6 54 Z" fill="#0B0E17"/><path d="M 6 60 A 6 6 0 0 1 0 54" stroke="#00F0FF" stroke-width="1.2" fill="none"/></g>
+  <g id="focus-bottom"><rect x="6" y="54" width="48" height="6" fill="#0B0E17"/><line x1="6" y1="59.5" x2="54" y2="59.5" stroke="#00F0FF" stroke-width="1.2"/></g>
+  <g id="focus-bottomright"><path d="M 60 54 A 6 6 0 0 1 54 60 L 54 54 Z" fill="#0B0E17"/><path d="M 60 54 A 6 6 0 0 1 54 60" stroke="#00F0FF" stroke-width="1.2" fill="none"/></g>
+</svg>

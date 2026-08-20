@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="130" viewBox="0 0 240 130">
+  <defs>
+    <!-- Active Titlebar Fill -->
+    <linearGradient id="activeTitleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18223C"/>
+      <stop offset="100%" stop-color="#0F1626"/>
+    </linearGradient>
+
+    <!-- Inactive Titlebar Fill -->
+    <linearGradient id="inactiveTitleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F1524"/>
+      <stop offset="100%" stop-color="#090C14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Stretch borders hint: tells KWin to stretch top/bottom/left/right instead of repeating (tiling) -->
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+
+  <!-- ============================================================== -->
+  <!-- 1. ACTIVE NORMAL WINDOW (x=0..112, y=0..93)                     -->
+  <!-- ============================================================== -->
+  <g id="decoration-topleft">
+    <rect x="0" y="0" width="16" height="32" fill="url(#activeTitleGrad)"/>
+    <path d="M 0.5 32 L 0.5 8 A 7.5 7.5 0 0 1 8 0.5 L 16 0.5" fill="none" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="0" y1="31.5" x2="16" y2="31.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-top">
+    <rect x="16" y="0" width="80" height="32" fill="url(#activeTitleGrad)"/>
+    <line x1="16" y1="0.5" x2="96" y2="0.5" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="16" y1="31.5" x2="96" y2="31.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-topright">
+    <rect x="96" y="0" width="16" height="32" fill="url(#activeTitleGrad)"/>
+    <path d="M 96 0.5 L 104 0.5 A 7.5 7.5 0 0 1 111.5 8 L 111.5 32" fill="none" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="96" y1="31.5" x2="112" y2="31.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-left">
+    <rect x="0" y="32" width="16" height="60" fill="none"/>
+    <line x1="0.5" y1="32" x2="0.5" y2="92" stroke="#00F0FF" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-center">
+    <rect x="16" y="32" width="80" height="60" fill="none"/>
+  </g>
+
+  <g id="decoration-right">
+    <rect x="96" y="32" width="16" height="60" fill="none"/>
+    <line x1="111.5" y1="32" x2="111.5" y2="92" stroke="#00F0FF" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-bottomleft">
+    <rect x="0" y="92" width="16" height="1" fill="#00F0FF"/>
+  </g>
+
+  <g id="decoration-bottom">
+    <rect x="16" y="92" width="80" height="1" fill="#00F0FF"/>
+  </g>
+
+  <g id="decoration-bottomright">
+    <rect x="96" y="92" width="16" height="1" fill="#00F0FF"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 2. ACTIVE MAXIMIZED WINDOW (x=0..112, y=96..128)               -->
+  <!-- ============================================================== -->
+  <g id="decoration-maximized-topleft">
+    <rect x="0" y="96" width="16" height="32" fill="url(#activeTitleGrad)"/>
+    <line x1="0" y1="96.5" x2="16" y2="96.5" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="0" y1="127.5" x2="16" y2="127.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+  <g id="decoration-maximized-top">
+    <rect x="16" y="96" width="80" height="32" fill="url(#activeTitleGrad)"/>
+    <line x1="16" y1="96.5" x2="96" y2="96.5" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="16" y1="127.5" x2="96" y2="127.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+  <g id="decoration-maximized-topright">
+    <rect x="96" y="96" width="16" height="32" fill="url(#activeTitleGrad)"/>
+    <line x1="96" y1="96.5" x2="112" y2="96.5" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="96" y1="127.5" x2="112" y2="127.5" stroke="#0B0E17" stroke-width="1.0"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 3. INACTIVE NORMAL WINDOW (x=120..232, y=0..93)               -->
+  <!-- ============================================================== -->
+  <g id="decoration-inactive-topleft">
+    <rect x="120" y="0" width="16" height="32" fill="url(#inactiveTitleGrad)"/>
+    <path d="M 120.5 32 L 120.5 8 A 7.5 7.5 0 0 1 128 0.5 L 136 0.5" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="120" y1="31.5" x2="136" y2="31.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-inactive-top">
+    <rect x="136" y="0" width="80" height="32" fill="url(#inactiveTitleGrad)"/>
+    <line x1="136" y1="0.5" x2="216" y2="0.5" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="136" y1="31.5" x2="216" y2="31.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-inactive-topright">
+    <rect x="216" y="0" width="16" height="32" fill="url(#inactiveTitleGrad)"/>
+    <path d="M 216 0.5 L 224 0.5 A 7.5 7.5 0 0 1 231.5 8 L 231.5 32" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="216" y1="31.5" x2="232" y2="31.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-inactive-left">
+    <rect x="120" y="32" width="16" height="60" fill="none"/>
+    <line x1="120.5" y1="32" x2="120.5" y2="92" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-inactive-center">
+    <rect x="136" y="32" width="80" height="60" fill="none"/>
+  </g>
+
+  <g id="decoration-inactive-right">
+    <rect x="216" y="32" width="16" height="60" fill="none"/>
+    <line x1="231.5" y1="32" x2="231.5" y2="92" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <g id="decoration-inactive-bottomleft">
+    <rect x="120" y="92" width="16" height="1" fill="#2A3558"/>
+  </g>
+
+  <g id="decoration-inactive-bottom">
+    <rect x="136" y="92" width="80" height="1" fill="#2A3558"/>
+  </g>
+
+  <g id="decoration-inactive-bottomright">
+    <rect x="216" y="92" width="16" height="1" fill="#2A3558"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 4. INACTIVE MAXIMIZED WINDOW (x=120..232, y=96..128)         -->
+  <!-- ============================================================== -->
+  <g id="decoration-inactive-maximized-topleft">
+    <rect x="120" y="96" width="16" height="32" fill="url(#inactiveTitleGrad)"/>
+    <line x1="120" y1="96.5" x2="136" y2="96.5" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="120" y1="127.5" x2="136" y2="127.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+  <g id="decoration-inactive-maximized-top">
+    <rect x="136" y="96" width="80" height="32" fill="url(#inactiveTitleGrad)"/>
+    <line x1="136" y1="96.5" x2="216" y2="96.5" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="136" y1="127.5" x2="216" y2="127.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+  <g id="decoration-inactive-maximized-topright">
+    <rect x="216" y="96" width="16" height="32" fill="url(#inactiveTitleGrad)"/>
+    <line x1="216" y1="96.5" x2="232" y2="96.5" stroke="#2A3558" stroke-width="1.0"/>
+    <line x1="216" y1="127.5" x2="232" y2="127.5" stroke="#05070D" stroke-width="1.0"/>
+  </g>
+
+  <!-- ============================================================== -->
+  <!-- 5. COMPOSITOR WINDOW MASKS ('mask-*')                         -->
+  <!-- ============================================================== -->
+  <g id="mask-topleft">
+    <path d="M 0 32 L 0 8 A 8 8 0 0 1 8 0 L 16 0 L 16 32 Z" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-top">
+    <rect x="16" y="0" width="80" height="32" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-topright">
+    <path d="M 96 0 L 104 0 A 8 8 0 0 1 112 8 L 112 32 L 96 32 Z" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-left">
+    <rect x="0" y="32" width="16" height="60" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-center">
+    <rect x="16" y="32" width="80" height="60" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-right">
+    <rect x="96" y="32" width="16" height="60" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-bottomleft">
+    <rect x="0" y="92" width="16" height="1" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-bottom">
+    <rect x="16" y="92" width="80" height="1" fill="#FFFFFF"/>
+  </g>
+  <g id="mask-bottomright">
+    <rect x="96" y="92" width="16" height="1" fill="#FFFFFF"/>
+  </g>
+</svg>

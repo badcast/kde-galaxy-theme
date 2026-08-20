@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+  <rect id="hint-top-margin" x="0" y="0" width="60" height="6" fill="none"/>
+  <rect id="hint-bottom-margin" x="0" y="54" width="60" height="6" fill="none"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="60" fill="none"/>
+  <rect id="hint-right-margin" x="54" y="0" width="6" height="60" fill="none"/>
+
+  <!-- HOVER STATE (High-contrast cosmic dark glass with cyan glow outline) -->
+  <g id="hover-center"><rect x="6" y="6" width="48" height="48" fill="#1E2B48" fill-opacity="0.85"/></g>
+  <g id="hover-topleft"><path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#1E2B48" fill-opacity="0.85"/><path d="M 0 6 A 6 6 0 0 1 6 0" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2" fill="none"/></g>
+  <g id="hover-top"><rect x="6" y="0" width="48" height="6" fill="#1E2B48" fill-opacity="0.85"/><line x1="6" y1="0.5" x2="54" y2="0.5" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2"/></g>
+  <g id="hover-topright"><path d="M 54 0 A 6 6 0 0 1 60 6 L 54 6 Z" fill="#1E2B48" fill-opacity="0.85"/><path d="M 54 0 A 6 6 0 0 1 60 6" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2" fill="none"/></g>
+  <g id="hover-left"><rect x="0" y="6" width="6" height="48" fill="#1E2B48" fill-opacity="0.85"/><line x1="0.5" y1="6" x2="0.5" y2="54" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2"/></g>
+  <g id="hover-right"><rect x="54" y="6" width="6" height="48" fill="#1E2B48" fill-opacity="0.85"/><line x1="59.5" y1="6" x2="59.5" y2="54" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2"/></g>
+  <g id="hover-bottomleft"><path d="M 6 60 A 6 6 0 0 1 0 54 L 6 54 Z" fill="#1E2B48" fill-opacity="0.85"/><path d="M 6 60 A 6 6 0 0 1 0 54" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2" fill="none"/></g>
+  <g id="hover-bottom"><rect x="6" y="54" width="48" height="6" fill="#1E2B48" fill-opacity="0.85"/><line x1="6" y1="59.5" x2="54" y2="59.5" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2"/></g>
+  <g id="hover-bottomright"><path d="M 60 54 A 6 6 0 0 1 54 60 L 54 54 Z" fill="#1E2B48" fill-opacity="0.85"/><path d="M 60 54 A 6 6 0 0 1 54 60" stroke="#00F0FF" stroke-opacity="0.8" stroke-width="1.2" fill="none"/></g>
+
+  <!-- SELECTED STATE -->
+  <g id="selected-center"><rect x="6" y="6" width="48" height="48" fill="#121829" fill-opacity="0.90"/></g>
+  <g id="selected-topleft"><path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#121829" fill-opacity="0.90"/><path d="M 0 6 A 6 6 0 0 1 6 0" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4" fill="none"/></g>
+  <g id="selected-top"><rect x="6" y="0" width="48" height="6" fill="#121829" fill-opacity="0.90"/><line x1="6" y1="0.5" x2="54" y2="0.5" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4"/></g>
+  <g id="selected-topright"><path d="M 54 0 A 6 6 0 0 1 60 6 L 54 6 Z" fill="#121829" fill-opacity="0.90"/><path d="M 54 0 A 6 6 0 0 1 60 6" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4" fill="none"/></g>
+  <g id="selected-left"><rect x="0" y="6" width="6" height="48" fill="#121829" fill-opacity="0.90"/><line x1="0.5" y1="6" x2="0.5" y2="54" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4"/></g>
+  <g id="selected-right"><rect x="54" y="6" width="6" height="48" fill="#121829" fill-opacity="0.90"/><line x1="59.5" y1="6" x2="59.5" y2="54" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4"/></g>
+  <g id="selected-bottomleft"><path d="M 6 60 A 6 6 0 0 1 0 54 L 6 54 Z" fill="#121829" fill-opacity="0.90"/><path d="M 6 60 A 6 6 0 0 1 0 54" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4" fill="none"/></g>
+  <g id="selected-bottom"><rect x="6" y="54" width="48" height="6" fill="#121829" fill-opacity="0.90"/><line x1="6" y1="59.5" x2="54" y2="59.5" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4"/></g>
+  <g id="selected-bottomright"><path d="M 60 54 A 6 6 0 0 1 54 60 L 54 54 Z" fill="#121829" fill-opacity="0.90"/><path d="M 60 54 A 6 6 0 0 1 54 60" stroke="#00F0FF" stroke-opacity="0.9" stroke-width="1.4" fill="none"/></g>
+</svg>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <defs>
+    <linearGradient id="topGlowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
+  <rect id="hint-tile-center" x="6" y="6" width="68" height="68" fill="none"/>
+  <rect id="hint-top-margin" x="0" y="0" width="80" height="6" fill="none"/>
+  <rect id="hint-bottom-margin" x="0" y="74" width="80" height="6" fill="none"/>
+  <rect id="hint-left-margin" x="0" y="0" width="6" height="80" fill="none"/>
+  <rect id="hint-right-margin" x="74" y="0" width="6" height="80" fill="none"/>
+
+  <!-- Center Tile (Uniform Solid Obsidian Dark) -->
+  <g id="center">
+    <rect x="6" y="6" width="68" height="68" fill="#0F1426" fill-opacity="0.94"/>
+  </g>
+
+  <!-- Top-Left Corner (Rounded 6px) -->
+  <g id="topleft">
+    <path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#0F1426" fill-opacity="0.94"/>
+    <path d="M 0 6 A 6 6 0 0 1 6 0" fill="none" stroke="#00F0FF" stroke-width="1.0" stroke-opacity="0.8"/>
+  </g>
+
+  <!-- Top Border with Starlight Highlight Line -->
+  <g id="top">
+    <rect x="6" y="0" width="68" height="6" fill="#0F1426" fill-opacity="0.94"/>
+    <line x1="6" y1="0.5" x2="74" y2="0.5" stroke="url(#topGlowLine)" stroke-width="1.0"/>
+  </g>
+
+  <!-- Top-Right Corner (Rounded 6px) -->
+  <g id="topright">
+    <path d="M 74 0 A 6 6 0 0 1 80 6 L 74 6 Z" fill="#0F1426" fill-opacity="0.94"/>
+    <path d="M 74 0 A 6 6 0 0 1 80 6" fill="none" stroke="#00F0FF" stroke-width="1.0" stroke-opacity="0.8"/>
+  </g>
+
+  <!-- Left 1px Border -->
+  <g id="left">
+    <rect x="0" y="6" width="6" height="68" fill="#0F1426" fill-opacity="0.94"/>
+    <line x1="0.5" y1="6" x2="0.5" y2="74" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <!-- Right 1px Border -->
+  <g id="right">
+    <rect x="74" y="6" width="6" height="68" fill="#0F1426" fill-opacity="0.94"/>
+    <line x1="79.5" y1="6" x2="79.5" y2="74" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <!-- Bottom-Left Corner -->
+  <g id="bottomleft">
+    <path d="M 6 80 A 6 6 0 0 1 0 74 L 6 74 Z" fill="#0F1426" fill-opacity="0.94"/>
+    <path d="M 6 80 A 6 6 0 0 1 0 74" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <!-- Bottom 1px Border -->
+  <g id="bottom">
+    <rect x="6" y="74" width="68" height="6" fill="#0F1426" fill-opacity="0.94"/>
+    <line x1="6" y1="79.5" x2="74" y2="79.5" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <!-- Bottom-Right Corner -->
+  <g id="bottomright">
+    <path d="M 80 74 A 6 6 0 0 1 74 80 L 74 74 Z" fill="#0F1426" fill-opacity="0.94"/>
+    <path d="M 80 74 A 6 6 0 0 1 74 80" fill="none" stroke="#2A3558" stroke-width="1.0"/>
+  </g>
+
+  <!-- Shadow Group (Subtle outer drop-shadow) -->
+  <rect id="shadow-center" x="6" y="6" width="68" height="68" fill="none"/>
+  <rect id="shadow-top" x="6" y="0" width="68" height="6" fill="none"/>
+  <rect id="shadow-bottom" x="6" y="74" width="68" height="6" fill="none"/>
+  <rect id="shadow-left" x="0" y="6" width="6" height="68" fill="none"/>
+  <rect id="shadow-right" x="74" y="6" width="6" height="68" fill="none"/>
+  <rect id="shadow-topleft" x="0" y="0" width="6" height="6" fill="none"/>
+  <rect id="shadow-topright" x="74" y="0" width="6" height="6" fill="none"/>
+  <rect id="shadow-bottomleft" x="0" y="74" width="6" height="6" fill="none"/>
+  <rect id="shadow-bottomright" x="74" y="74" width="6" height="6" fill="none"/>
+</svg>

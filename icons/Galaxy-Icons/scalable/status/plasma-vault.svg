@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="tileBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="tileBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0B0E17" stop-opacity="0.92"/>
+    </linearGradient>
+  </defs>
+  <!-- Cosmic Squircle Tile -->
+  <rect x="1.5" y="1.5" width="21" height="21" rx="5.5" fill="url(#tileBg)" stroke="url(#tileBorder)" stroke-width="1.2"/>
+  <rect x="2.5" y="2.5" width="19" height="19" rx="4.5" fill="none" stroke="#F8FAFC" stroke-opacity="0.12" stroke-width="0.8"/>
+  <!-- Glowing Neon Content -->
+  <circle cx="12" cy="12" r="7" fill="none" stroke="#00F0FF" stroke-width="1.6"/><circle cx="12" cy="12" r="3" fill="none" stroke="#FBBF24" stroke-width="1.4"/><line x1="12" y1="5" x2="12" y2="8" stroke="#00F0FF" stroke-width="1.5"/><line x1="12" y1="16" x2="12" y2="19" stroke="#00F0FF" stroke-width="1.5"/><line x1="5" y1="12" x2="8" y2="12" stroke="#00F0FF" stroke-width="1.5"/><line x1="16" y1="12" x2="19" y2="12" stroke="#00F0FF" stroke-width="1.5"/>
+</svg>

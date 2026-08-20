@@ -1,0 +1,4 @@
+[Icon Theme]
+Name=Galaxy-Cursors
+Comment=Galaxy Theme KDE - Luminous cosmic pointer theme by badcast <lmecomposer@gmail.com>
+Inherits=breeze_cursors,Adwaita,core

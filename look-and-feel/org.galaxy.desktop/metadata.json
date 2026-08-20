@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "lmecomposer@gmail.com",
+                "Name": "badcast"
+            }
+        ],
+        "Category": "Global Theme",
+        "Description": "Galaxy Theme KDE - Modern deep space cosmic Global Theme for KDE Plasma 6",
+        "Id": "org.galaxy.desktop",
+        "License": "GPL-3.0+",
+        "Name": "Galaxy Theme KDE",
+        "Version": "1.0.0",
+        "Website": "https://github.com/badcast/kde-galaxy-theme"
+    }
+}

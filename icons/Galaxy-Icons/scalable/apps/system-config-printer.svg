@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="14" fill="url(#bg)" stroke="url(#rim)" stroke-width="1.2"/>
+  <rect x="7.5" y="7.5" width="49" height="49" rx="12.5" fill="none" stroke="#F8FAFC" stroke-opacity="0.18" stroke-width="1"/>
+  <rect x="14" y="24" width="36" height="22" rx="4" fill="#0B0E17" stroke="#00F0FF" stroke-width="2"/><path d="M 20 24 L 20 14 C 20 12.8 21 12 22 12 L 42 12 C 43 12 44 12.8 44 14 L 44 24" fill="#F8FAFC" fill-opacity="0.3" stroke="#F8FAFC" stroke-width="1.8"/><rect x="20" y="34" width="24" height="16" rx="2" fill="#1A2238" stroke="#00F0FF" stroke-width="1.5"/><line x1="24" y1="40" x2="40" y2="40" stroke="#F8FAFC" stroke-width="1.5" stroke-linecap="round"/><circle cx="44" cy="29" r="2" fill="#10B981"/>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="foldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4565"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="backGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238"/>
+      <stop offset="100%" stop-color="#0F1426"/>
+    </linearGradient>
+  </defs>
+  <path d="M 6 15 C 6 12.8 7.8 11 10 11 L 24 11 L 28 15 L 54 15 C 56.2 15 58 16.8 58 19 L 58 48 C 58 50.2 56.2 52 54 52 L 10 52 C 7.8 52 6 50.2 6 48 Z" fill="url(#backGrad)" stroke="#FF4565" stroke-opacity="0.5" stroke-width="1.2"/>
+  <rect x="12" y="18" width="40" height="16" rx="2" fill="#F8FAFC" fill-opacity="0.25"/>
+  <path d="M 6 23 C 6 20.8 7.8 19 10 19 L 54 19 C 56.2 19 58 20.8 58 23 L 58 48 C 58 51.3 55.3 54 52 54 L 12 54 C 8.7 54 6 51.3 6 48 Z" fill="url(#foldGrad)" fill-opacity="0.92" stroke="#F8FAFC" stroke-opacity="0.3" stroke-width="1"/>
+  <line x1="12" y1="22" x2="52" y2="22" stroke="#F8FAFC" stroke-opacity="0.75" stroke-width="1"/>
+  <rect x="24" y="30" width="16" height="14" rx="2" fill="none" stroke="#F8FAFC" stroke-width="1.5"/><polygon points="30,34 36,37 30,40" fill="#F8FAFC"/>
+</svg>
