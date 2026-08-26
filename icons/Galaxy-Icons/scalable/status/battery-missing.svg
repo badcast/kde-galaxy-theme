@@ -14,5 +14,5 @@
   <rect x="1.5" y="1.5" width="21" height="21" rx="5.5" fill="url(#tileBg)" stroke="url(#tileBorder)" stroke-width="1.2"/>
   <rect x="2.5" y="2.5" width="19" height="19" rx="4.5" fill="none" stroke="#F8FAFC" stroke-opacity="0.12" stroke-width="0.8"/>
   <!-- Glowing Neon Content -->
-  <rect x="5.5" y="7.5" width="11.5" height="9" rx="2" fill="none" stroke="#94A3B8" stroke-width="1.4" opacity="0.5"/><text x="11.5" y="14.5" font-family="sans-serif" font-size="8" font-weight="bold" fill="#94A3B8" text-anchor="middle">?</text>
+  <rect x="5.5" y="7.5" width="11.5" height="9" rx="2" fill="none" stroke="#94A3B8" stroke-width="1.4" opacity="0.5"/><path d="M 10 11 C 10 9.5 13 9.5 13 11 C 13 12 11.5 12.2 11.5 13" fill="none" stroke="#94A3B8" stroke-width="1.2" stroke-linecap="round"/><circle cx="11.5" cy="14.8" r="0.7" fill="#94A3B8"/>
 </svg>

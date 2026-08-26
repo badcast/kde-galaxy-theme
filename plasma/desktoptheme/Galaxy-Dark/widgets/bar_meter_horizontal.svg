@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60">
   <defs>
-    <linearGradient id="barActiveFill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F0FF"/>
+    <style id="current-color-scheme" type="text/css">
+      .ColorScheme-Text { color:#F8FAFC; }
+      .ColorScheme-Background { color:#0F1426; }
+      .ColorScheme-Highlight { color:#00F0FF; }
+      .ColorScheme-ButtonBackground { color:#1A2238; }
+      .ColorScheme-Positive { color:#10B981; }
+    </style>
+    <linearGradient id="barActiveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0096D6"/>
       <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="barPeakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#10B981"/>
     </linearGradient>
   </defs>
 
+  <rect id="hint-tile-center" x="0" y="0" width="2" height="2" fill="none"/>
   <rect id="hint-stretch-borders" x="0" y="0" width="1" height="1" fill="none"/>
   <rect id="hint-bar-size" x="0" y="0" width="6" height="6" fill="none"/>
 
-  <!-- Inactive Groove (Smooth obsidian track) -->
+  <!-- ========================================== -->
+  <!-- 1. INACTIVE GROOVE (Track background)      -->
+  <!-- ========================================== -->
   <g id="bar-inactive-center"><rect x="6" y="6" width="8" height="8" fill="#0B0E17"/></g>
   <g id="bar-inactive-topleft"><path d="M 0 6 A 6 6 0 0 1 6 0 L 6 6 Z" fill="#0B0E17"/><path d="M 0 6 A 6 6 0 0 1 6 0" stroke="#2A3558" stroke-width="1" fill="none"/></g>
   <g id="bar-inactive-top"><rect x="6" y="0" width="8" height="6" fill="#0B0E17"/><line x1="6" y1="0.5" x2="14" y2="0.5" stroke="#2A3558" stroke-width="1"/></g>
@@ -21,14 +35,40 @@
   <g id="bar-inactive-bottom"><rect x="6" y="14" width="8" height="6" fill="#0B0E17"/><line x1="6" y1="19.5" x2="14" y2="19.5" stroke="#2A3558" stroke-width="1"/></g>
   <g id="bar-inactive-bottomright"><path d="M 20 14 A 6 6 0 0 1 14 20 L 14 14 Z" fill="#0B0E17"/><path d="M 20 14 A 6 6 0 0 1 14 20" stroke="#2A3558" stroke-width="1" fill="none"/></g>
 
-  <!-- Active Level Fill -->
-  <g id="bar-active-center"><rect x="36" y="6" width="8" height="8" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-topleft"><path d="M 30 6 A 6 6 0 0 1 36 0 L 36 6 Z" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-top"><rect x="36" y="0" width="8" height="6" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-topright"><path d="M 44 0 A 6 6 0 0 1 50 6 L 44 6 Z" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-left"><rect x="30" y="6" width="6" height="8" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-right"><rect x="44" y="6" width="6" height="8" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-bottomleft"><path d="M 36 20 A 6 6 0 0 1 30 14 L 36 14 Z" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-bottom"><rect x="36" y="14" width="8" height="6" fill="url(#barActiveFill)"/></g>
-  <g id="bar-active-bottomright"><path d="M 50 14 A 6 6 0 0 1 44 20 L 44 14 Z" fill="url(#barActiveFill)"/></g>
+  <!-- ========================================== -->
+  <!-- 2. ACTIVE PROGRESS (Set level)             -->
+  <!-- ========================================== -->
+  <g id="bar-active-center"><rect x="36" y="6" width="8" height="8" fill="url(#barActiveGrad)"/></g>
+  <g id="bar-active-topleft"><path d="M 30 6 A 6 6 0 0 1 36 0 L 36 6 Z" fill="url(#barActiveGrad)"/><path d="M 30 6 A 6 6 0 0 1 36 0" stroke="#00F0FF" stroke-width="1" fill="none"/></g>
+  <g id="bar-active-top"><rect x="36" y="0" width="8" height="6" fill="url(#barActiveGrad)"/><line x1="36" y1="0.5" x2="44" y2="0.5" stroke="#00F0FF" stroke-width="1"/></g>
+  <g id="bar-active-topright"><path d="M 44 0 A 6 6 0 0 1 50 6 L 44 6 Z" fill="url(#barActiveGrad)"/><path d="M 44 0 A 6 6 0 0 1 50 6" stroke="#00F0FF" stroke-width="1" fill="none"/></g>
+  <g id="bar-active-left"><rect x="30" y="6" width="6" height="8" fill="url(#barActiveGrad)"/><line x1="30.5" y1="6" x2="30.5" y2="14" stroke="#00F0FF" stroke-width="1"/></g>
+  <g id="bar-active-right"><rect x="44" y="6" width="6" height="8" fill="url(#barActiveGrad)"/><line x1="49.5" y1="6" x2="49.5" y2="14" stroke="#00F0FF" stroke-width="1"/></g>
+  <g id="bar-active-bottomleft"><path d="M 36 20 A 6 6 0 0 1 30 14 L 36 14 Z" fill="url(#barActiveGrad)"/><path d="M 36 20 A 6 6 0 0 1 30 14" stroke="#00F0FF" stroke-width="1" fill="none"/></g>
+  <g id="bar-active-bottom"><rect x="36" y="14" width="8" height="6" fill="url(#barActiveGrad)"/><line x1="36" y1="19.5" x2="44" y2="19.5" stroke="#00F0FF" stroke-width="1"/></g>
+  <g id="bar-active-bottomright"><path d="M 50 14 A 6 6 0 0 1 44 20 L 44 14 Z" fill="url(#barActiveGrad)"/><path d="M 50 14 A 6 6 0 0 1 44 20" stroke="#00F0FF" stroke-width="1" fill="none"/></g>
+
+  <!-- ========================================== -->
+  <!-- 3. SELECTED PEAK METER (Live audio output) -->
+  <!-- ========================================== -->
+  <g id="selected-bar-active-center"><rect x="66" y="6" width="8" height="8" fill="url(#barPeakGrad)"/></g>
+  <g id="selected-bar-active-topleft"><path d="M 60 6 A 6 6 0 0 1 66 0 L 66 6 Z" fill="url(#barPeakGrad)"/><path d="M 60 6 A 6 6 0 0 1 66 0" stroke="#10B981" stroke-width="1" fill="none"/></g>
+  <g id="selected-bar-active-top"><rect x="66" y="0" width="8" height="6" fill="url(#barPeakGrad)"/><line x1="66" y1="0.5" x2="74" y2="0.5" stroke="#10B981" stroke-width="1"/></g>
+  <g id="selected-bar-active-topright"><path d="M 74 0 A 6 6 0 0 1 80 6 L 74 6 Z" fill="url(#barPeakGrad)"/><path d="M 74 0 A 6 6 0 0 1 80 6" stroke="#10B981" stroke-width="1" fill="none"/></g>
+  <g id="selected-bar-active-left"><rect x="60" y="6" width="6" height="8" fill="url(#barPeakGrad)"/><line x1="60.5" y1="6" x2="60.5" y2="14" stroke="#10B981" stroke-width="1"/></g>
+  <g id="selected-bar-active-right"><rect x="74" y="6" width="6" height="8" fill="url(#barPeakGrad)"/><line x1="79.5" y1="6" x2="79.5" y2="14" stroke="#10B981" stroke-width="1"/></g>
+  <g id="selected-bar-active-bottomleft"><path d="M 66 20 A 6 6 0 0 1 60 14 L 66 14 Z" fill="url(#barPeakGrad)"/><path d="M 66 20 A 6 6 0 0 1 60 14" stroke="#10B981" stroke-width="1" fill="none"/></g>
+  <g id="selected-bar-active-bottom"><rect x="66" y="14" width="8" height="6" fill="url(#barPeakGrad)"/><line x1="66" y1="19.5" x2="74" y2="19.5" stroke="#10B981" stroke-width="1"/></g>
+  <g id="selected-bar-active-bottomright"><path d="M 80 14 A 6 6 0 0 1 74 20 L 74 14 Z" fill="url(#barPeakGrad)"/><path d="M 80 14 A 6 6 0 0 1 74 20" stroke="#10B981" stroke-width="1" fill="none"/></g>
+
+  <!-- Compatibility aliases -->
+  <use id="bar-active-selected-center" href="#selected-bar-active-center"/>
+  <use id="bar-active-selected-topleft" href="#selected-bar-active-topleft"/>
+  <use id="bar-active-selected-top" href="#selected-bar-active-top"/>
+  <use id="bar-active-selected-topright" href="#selected-bar-active-topright"/>
+  <use id="bar-active-selected-left" href="#selected-bar-active-left"/>
+  <use id="bar-active-selected-right" href="#selected-bar-active-right"/>
+  <use id="bar-active-selected-bottomleft" href="#selected-bar-active-bottomleft"/>
+  <use id="bar-active-selected-bottom" href="#selected-bar-active-bottom"/>
+  <use id="bar-active-selected-bottomright" href="#selected-bar-active-bottomright"/>
 </svg>

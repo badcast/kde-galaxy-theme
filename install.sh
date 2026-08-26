@@ -11,7 +11,7 @@
 #   4. SVG Icon Theme: Galaxy-Icons (380+ bespoke vector icons & symlinks)
 #   5. Cursor Theme: Galaxy-Cursors (Shadowed high-contrast Xcursors)
 #   6. Global Look-and-Feel Package: org.galaxy.desktop
-#   7. Kvantum Application Theme: Galaxy-Dark (Adapted from KvMojave)
+#   7. Cosmic 4K Wallpaper: Galaxy-Dark
 #
 # Usage:
 #   ./install.sh           Install all theme components
@@ -52,11 +52,9 @@ done
 
 if [[ $EUID -eq 0 ]]; then
     INSTALL_DIR="/usr/share"
-    KVANTUM_DIR="/usr/share/Kvantum"
     echo "⚡ Running as root: System-wide path ($INSTALL_DIR)"
 else
     INSTALL_DIR="${XDG_DATA_HOME:-$HOME/.local/share}"
-    KVANTUM_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/Kvantum"
     echo "🚀 Running for user: Local path ($INSTALL_DIR)"
 fi
 
@@ -69,19 +67,9 @@ if [[ "$UNINSTALL_MODE" = true ]]; then
     rm -rf "$INSTALL_DIR/icons/Galaxy-Cursors"
     rm -rf "$INSTALL_DIR/plasma/look-and-feel/org.galaxy.desktop"
     rm -rf "$INSTALL_DIR/wallpapers/Galaxy-Dark"
-    rm -rf "$KVANTUM_DIR/Galaxy-Dark"
     rm -f "$HOME/.cache/plasma_theme_Galaxy-Dark.kcache"
     echo "✅ Galaxy Theme successfully uninstalled."
     exit 0
-fi
-
-if [[ "$REBUILD_FIRST" = true ]]; then
-    echo "⚙️ Regenerating all vector assets and icons..."
-    python3 "$SCRIPT_DIR/scripts/generate_assets.py"
-    python3 "$SCRIPT_DIR/scripts/generate_icons.py"
-    python3 "$SCRIPT_DIR/scripts/generate_kvantum.py"
-    python3 "$SCRIPT_DIR/scripts/generate_aurorae.py"
-    python3 "$SCRIPT_DIR/scripts/build_cursors.py" || true
 fi
 
 echo ""
@@ -90,23 +78,23 @@ echo "🌌 Installing Galaxy Cosmic Suite for KDE 6"
 echo "=========================================="
 
 # 1. Color Scheme
-echo "-> [1/8] Installing Color Scheme: GalaxyDark..."
+echo "-> [1/7] Installing Color Scheme: GalaxyDark..."
 mkdir -p "$INSTALL_DIR/color-schemes"
 cp -f "$SCRIPT_DIR/color-schemes/"*.colors "$INSTALL_DIR/color-schemes/"
 
 # 2. Plasma Desktop Theme
-echo "-> [2/8] Installing Plasma Desktop Theme: Galaxy-Dark..."
+echo "-> [2/7] Installing Plasma Desktop Theme: Galaxy-Dark..."
 mkdir -p "$INSTALL_DIR/plasma/desktoptheme/Galaxy-Dark"
 cp -a "$SCRIPT_DIR/plasma/desktoptheme/Galaxy-Dark/"* "$INSTALL_DIR/plasma/desktoptheme/Galaxy-Dark/"
 rm -f "$HOME/.cache/plasma_theme_Galaxy-Dark.kcache"
 
 # 3. Aurorae Window Decoration
-echo "-> [3/8] Installing Aurorae Decoration: Galaxy-Dark-Aurorae..."
+echo "-> [3/7] Installing Aurorae Decoration: Galaxy-Dark-Aurorae..."
 mkdir -p "$INSTALL_DIR/aurorae/themes/Galaxy-Dark-Aurorae"
 cp -a "$SCRIPT_DIR/aurorae/themes/Galaxy-Dark-Aurorae/"* "$INSTALL_DIR/aurorae/themes/Galaxy-Dark-Aurorae/"
 
 # 4. SVG Icon Theme
-echo "-> [4/8] Installing SVG Icon Theme: Galaxy-Icons..."
+echo "-> [4/7] Installing SVG Icon Theme: Galaxy-Icons..."
 mkdir -p "$INSTALL_DIR/icons/Galaxy-Icons"
 cp -a "$SCRIPT_DIR/icons/Galaxy-Icons/"* "$INSTALL_DIR/icons/Galaxy-Icons/"
 if command -v gtk-update-icon-cache >/dev/null 2>&1; then
@@ -114,7 +102,7 @@ if command -v gtk-update-icon-cache >/dev/null 2>&1; then
 fi
 
 # 5. Cursor Theme
-echo "-> [5/8] Installing Cursor Theme: Galaxy-Cursors..."
+echo "-> [5/7] Installing Cursor Theme: Galaxy-Cursors..."
 mkdir -p "$INSTALL_DIR/icons/Galaxy-Cursors"
 cp -a "$SCRIPT_DIR/cursors/Galaxy-Cursors/"* "$INSTALL_DIR/icons/Galaxy-Cursors/"
 
@@ -135,28 +123,14 @@ EOF
 fi
 
 # 6. Global Look-and-Feel Package
-echo "-> [6/8] Installing Global Theme: org.galaxy.desktop..."
+echo "-> [6/7] Installing Global Theme: org.galaxy.desktop..."
 mkdir -p "$INSTALL_DIR/plasma/look-and-feel/org.galaxy.desktop"
 cp -a "$SCRIPT_DIR/look-and-feel/org.galaxy.desktop/"* "$INSTALL_DIR/plasma/look-and-feel/org.galaxy.desktop/"
 
-# 7. Kvantum Application Theme
-echo "-> [7/8] Installing Kvantum Theme: Galaxy-Dark..."
-mkdir -p "$KVANTUM_DIR/Galaxy-Dark"
-cp -a "$SCRIPT_DIR/Kvantum/Galaxy-Dark/"* "$KVANTUM_DIR/Galaxy-Dark/"
-
-# 8. Cosmic Wallpaper
-echo "-> [8/8] Installing Cosmic Wallpaper: Galaxy-Dark..."
+# 7. Cosmic Wallpaper
+echo "-> [7/7] Installing Cosmic Wallpaper: Galaxy-Dark..."
 mkdir -p "$INSTALL_DIR/wallpapers/Galaxy-Dark"
 cp -a "$SCRIPT_DIR/wallpapers/Galaxy-Dark/"* "$INSTALL_DIR/wallpapers/Galaxy-Dark/"
-
-# Configure Kvantum selection for user
-if [[ $EUID -ne 0 ]]; then
-    mkdir -p "$HOME/.config/Kvantum"
-    cat > "$HOME/.config/Kvantum/kvantum.kvconfig" <<EOF
-[General]
-theme=Galaxy-Dark
-EOF
-fi
 
 # Update Sycoca
 if command -v kbuildsycoca6 >/dev/null 2>&1; then
@@ -174,9 +148,9 @@ if [[ "$APPLY_NOW" = true ]]; then
     command -v plasma-apply-cursortheme >/dev/null 2>&1 && plasma-apply-cursortheme Galaxy-Cursors || true
     command -v plasma-apply-wallpaperimage >/dev/null 2>&1 && plasma-apply-wallpaperimage "$INSTALL_DIR/wallpapers/Galaxy-Dark/contents/images/2752x1536.jpeg" >/dev/null 2>&1 || true
 
-    # Kvantum Style, Cursor, & Icons
+    # Native KDE Application Style (Breeze with GalaxyDark colors), Cursor, & Icons
     if command -v kwriteconfig6 >/dev/null 2>&1; then
-        kwriteconfig6 --file kdeglobals --group KDE --key widgetStyle kvantum
+        kwriteconfig6 --file kdeglobals --group KDE --key widgetStyle Breeze
         kwriteconfig6 --file kdeglobals --group Icons --key Theme Galaxy-Icons
         kwriteconfig6 --file kdeglobals --group General --key ColorScheme GalaxyDark
         kwriteconfig6 --file kcminputrc --group Mouse --key cursorTheme Galaxy-Cursors
@@ -206,5 +180,5 @@ echo ""
 echo "Or via System Settings:"
 echo "  1. System Settings -> Colors & Themes -> Global Theme -> Select 'Galaxy Dark'"
 echo "  2. Window Decorations -> Select 'Galaxy Dark Aurorae'"
-echo "  3. Application Style -> Select 'kvantum'"
+echo "  3. Application Style -> Select 'Breeze' (Native KDE Style)"
 echo ""

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="docBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A2238"/>
+      <stop offset="100%" stop-color="#0F1426"/>
+    </linearGradient>
+    <linearGradient id="cornerFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M 14 8 L 38 8 L 50 20 L 50 56 C 50 58.2 48.2 60 46 60 L 14 60 C 11.8 60 10 58.2 10 56 L 10 12 C 10 9.8 11.8 8 14 8 Z" fill="url(#docBg)" stroke="#94A3B8" stroke-opacity="0.6" stroke-width="1.5"/>
+  <path d="M 38 8 L 38 20 L 50 20 Z" fill="url(#cornerFold)"/>
+  <rect x="14" y="40" width="36" height="12" rx="3" fill="#94A3B8" fill-opacity="0.85"/>
+  <text x="32" y="49" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#F8FAFC" text-anchor="middle">???</text>
+  <rect x="18" y="14" width="28" height="36" rx="4" fill="#0B0E17" stroke="#94A3B8" stroke-width="1.8" stroke-dasharray="4 2"/><path d="M 28 28 C 28 24 36 24 36 28 C 36 31 32 32 32 35" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="40" r="1.5" fill="#94A3B8"/>
+</svg>
