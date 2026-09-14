@@ -12,6 +12,16 @@
       <stop offset="0%" stop-color="#0F1524"/>
       <stop offset="100%" stop-color="#090C14"/>
     </linearGradient>
+
+    <!-- Active Border Gradients -->
+    <linearGradient id="activeBorderGradLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF2E63"/>
+    </linearGradient>
+    <linearGradient id="activeBorderGradRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#FF2E63"/>
+    </linearGradient>
   </defs>
 
   <!-- Stretch borders hint: tells KWin to stretch top/bottom/left/right instead of repeating (tiling) -->
@@ -40,7 +50,7 @@
 
   <g id="decoration-left">
     <rect x="0" y="32" width="16" height="60" fill="none"/>
-    <line x1="0.5" y1="32" x2="0.5" y2="92" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="0.5" y1="32" x2="0.5" y2="92" stroke="url(#activeBorderGradLeft)" stroke-width="1.0"/>
   </g>
 
   <g id="decoration-center">
@@ -49,19 +59,19 @@
 
   <g id="decoration-right">
     <rect x="96" y="32" width="16" height="60" fill="none"/>
-    <line x1="111.5" y1="32" x2="111.5" y2="92" stroke="#00F0FF" stroke-width="1.0"/>
+    <line x1="111.5" y1="32" x2="111.5" y2="92" stroke="url(#activeBorderGradRight)" stroke-width="1.0"/>
   </g>
 
   <g id="decoration-bottomleft">
-    <rect x="0" y="92" width="16" height="1" fill="#00F0FF"/>
+    <rect x="0" y="92" width="16" height="1" fill="#FF2E63"/>
   </g>
 
   <g id="decoration-bottom">
-    <rect x="16" y="92" width="80" height="1" fill="#00F0FF"/>
+    <rect x="16" y="92" width="80" height="1" fill="#FF2E63"/>
   </g>
 
   <g id="decoration-bottomright">
-    <rect x="96" y="92" width="16" height="1" fill="#00F0FF"/>
+    <rect x="96" y="92" width="16" height="1" fill="#FF2E63"/>
   </g>
 
   <!-- ============================================================== -->
