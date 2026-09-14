@@ -1,3 +1,3 @@
-## 2024-05-24 - Aurorae Theme Edge Clipping Fix using SVG rects
-**Learning:** In KDE Aurorae window decorations, using thin `<line>` elements with sub-pixel coordinates (like `x1="0.5"`) inside wider layout boxes can cause rendering artifacts and clipping on the side edges when KWin stretches or renders them.
-**Action:** Replace 1px `<line>` elements with integer-aligned `<rect width="1">` elements to ensure crisp, accurate rendering without clipping. When adding gradients, apply them to the `fill` of these `<rect>`s, rather than changing the `.rc` layout variables unnecessarily.
+## 2024-05-24 - Aurorae Theme Edge Clipping Re-Do
+**Learning:** KWin Aurorae uses layout configs (e.g. `TitleEdgeLeft=8`) to strictly crop SVG elements (`mask-topleft`, etc). If the SVG elements are natively drawn at 16px wide, setting `TitleEdgeLeft=8` physically chops off half of the element. Changing `.rc` to 16 breaks the layout offsets. The proper fix is to resize the SVG element bounding boxes and vector paths to structurally fit within the 8px constraint.
+**Action:** When fixing KWin SVG clipping, restructure the SVG bounding `<rect>`s and `<path>`s to mathematically fit inside the exact dimensions defined in the theme `.rc` file. Never arbitrarily increase `.rc` sizes to fit a broken SVG.
