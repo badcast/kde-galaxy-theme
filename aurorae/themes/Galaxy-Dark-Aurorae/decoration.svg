@@ -50,7 +50,7 @@
 
   <g id="decoration-left">
     <rect x="0" y="32" width="16" height="60" fill="none"/>
-    <line x1="0.5" y1="32" x2="0.5" y2="92" stroke="url(#activeBorderGradLeft)" stroke-width="1.0"/>
+    <rect x="0" y="32" width="1" height="60" fill="url(#activeBorderGradLeft)"/>
   </g>
 
   <g id="decoration-center">
@@ -59,7 +59,7 @@
 
   <g id="decoration-right">
     <rect x="96" y="32" width="16" height="60" fill="none"/>
-    <line x1="111.5" y1="32" x2="111.5" y2="92" stroke="url(#activeBorderGradRight)" stroke-width="1.0"/>
+    <rect x="111" y="32" width="1" height="60" fill="url(#activeBorderGradRight)"/>
   </g>
 
   <g id="decoration-bottomleft">
@@ -116,7 +116,7 @@
 
   <g id="decoration-inactive-left">
     <rect x="120" y="32" width="16" height="60" fill="none"/>
-    <line x1="120.5" y1="32" x2="120.5" y2="92" stroke="#2A3558" stroke-width="1.0"/>
+    <rect x="120" y="32" width="1" height="60" fill="#2A3558"/>
   </g>
 
   <g id="decoration-inactive-center">
@@ -125,7 +125,7 @@
 
   <g id="decoration-inactive-right">
     <rect x="216" y="32" width="16" height="60" fill="none"/>
-    <line x1="231.5" y1="32" x2="231.5" y2="92" stroke="#2A3558" stroke-width="1.0"/>
+    <rect x="231" y="32" width="1" height="60" fill="#2A3558"/>
   </g>
 
   <g id="decoration-inactive-bottomleft">
